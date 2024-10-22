@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Info</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #bab3b3;
+      width: 200px;
+    }
+
+    h1 {
+      text-align: center;  
+      font-size: 18px;
+    }
+    
+    #weather {
+      margin-top: 10px;
+    }
+
+    #city{
+        margin-inline: auto;
+        padding-inline: 5px;
+        width: 80%;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        height: 25px;
+        margin-bottom: 5px;
+        transition: .3s;
+    }
+    
+    #city:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    }
+
+    #getWeather{
+        border: none;
+        outline: none;
+        background-color: aqua;
+        border-radius: 10px;
+        transition: .3s;
+    }
+
+    #getWeather:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <h1>Weather</h1>
+      <input type="text" id="city" placeholder="Enter city" />
+      <button id="getWeather">Get Weather</button>
+      <div id="weather"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
